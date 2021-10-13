@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditActivity2">
+
+
+
+    <ImageView
+        android:id="@+id/product_image_details"
+        android:layout_width="match_parent"
+        android:layout_height="398dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/sds" />
+
+
+    <TextView
+        android:id="@+id/product_name_details2"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@id/product_image_details"
+        android:layout_marginTop="64dp"
+        android:gravity="center"
+        android:text="Product Name"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/product_qty_details2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/product_name_details2"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:text="Product Description"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/change"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/add_to_cart"
+        android:text="REMOVE"
+        android:layout_margin="15dp"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/white"
+        android:textSize="18dp"/>
+
+    <EditText
+        android:id="@+id/editQty2"
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="146dp"
+        android:textAlignment="center"
+        android:layout_marginBottom="128dp"
+        android:text="0" />
+
+
+
+
+
+</RelativeLayout>

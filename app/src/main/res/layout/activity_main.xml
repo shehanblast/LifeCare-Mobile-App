@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/r111"
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="85dp">
+
+
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="212dp"
+            android:layout_height="125dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginBottom="-104dp"
+            android:text="Products"
+            android:textColor="@color/white"
+            android:textSize="50dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/product_list"
+        android:layout_width="match_parent"
+        android:layout_height="491dp"
+        android:layout_below="@+id/r111"
+        android:layout_marginTop="86dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+    <!--    <Button-->
+<!--        android:id="@+id/next_process_btn"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginStart="10dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_marginEnd="10dp"-->
+<!--        android:layout_marginBottom="10dp"-->
+<!--        android:background="@drawable/btn_round"-->
+<!--        android:text="Delivery"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textSize="20dp" />-->
+
+
+
+</RelativeLayout>
