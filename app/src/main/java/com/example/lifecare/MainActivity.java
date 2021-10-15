@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
     private RecyclerView.LayoutManager layoutManager;
     private Button NextProcessBtn;
-    private ImageView close_wish, wishImage, edit1;
+    private ImageView close_wish, wishImage, edit1,addProduct;
     String ppid;
     private DatabaseReference ProductsRef;
 
@@ -45,6 +45,16 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setHasFixedSize(true);
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
+
+        addProduct =  findViewById(R.id.addNewProduct);
+
+        addProduct.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, NewProduct.class);
+                startActivity(intent);
+            }
+        });
 
 
     }
@@ -72,6 +82,8 @@ public class MainActivity extends AppCompatActivity {
 
                         //load image
                         Picasso.get().load(Iimage).into(holder.cartImage);
+
+
 
 
                         holder.itemView.setOnClickListener(new View.OnClickListener() {
@@ -113,6 +125,7 @@ public class MainActivity extends AppCompatActivity {
 
                             }
                         });
+
 
 
 

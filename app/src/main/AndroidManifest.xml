@@ -10,8 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LifeCare">
         <activity
+            android:name=".NewProduct"
+            android:exported="true" />
+        <activity
             android:name=".SplashScreen"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -26,9 +29,7 @@
             android:exported="true" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true"></activity>
     </application>
 
 </manifest>

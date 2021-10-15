@@ -140,10 +140,10 @@ public class EditProduct extends AppCompatActivity {
 
                                             //Put details in the Map
                                             final HashMap<String,Object> cartMap = new HashMap<>();
-
-
-
-                                cartMap.put("image","e");
+//
+//
+//
+//                                cartMap.put("image","e");
 //                                cartMap.put("pName","ppp");
                                             cartMap.put("pQty",lol);
 //                                            cartMap.put("pid",productID);

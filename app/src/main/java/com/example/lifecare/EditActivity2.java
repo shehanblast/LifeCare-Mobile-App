@@ -130,7 +130,7 @@ public class EditActivity2 extends AppCompatActivity {
 
 
 
-                                            cartMap.put("image","e");
+//                                            cartMap.put("image","e");
 //                                            cartMap.put("pName","ppp");
                                             cartMap.put("pQty",lol);
 //                                            cartMap.put("pid",productID);
