@@ -15,7 +15,7 @@ public class ProductViewHolder extends RecyclerView.ViewHolder implements View.O
     public TextView txtProductName, txtProductQuantity;
     public ItemClickListner itemClickListner;
     public ImageView cartImage;
-    public ImageView removeCart,addProduct,editCart2;
+    public ImageView removePro,addProduct,choice;
 
     public ProductViewHolder(@NonNull View itemView) {
         super(itemView);
@@ -24,6 +24,8 @@ public class ProductViewHolder extends RecyclerView.ViewHolder implements View.O
         txtProductName = (TextView) itemView.findViewById(R.id.product_name);
         txtProductQuantity = (TextView) itemView.findViewById(R.id.product_qty);
         addProduct = (ImageView) itemView.findViewById(R.id.addNewProduct);
+        choice = (ImageView) itemView.findViewById(R.id.choice);
+        removePro = (ImageView) itemView.findViewById(R.id.close_product);
     }
 
     @Override

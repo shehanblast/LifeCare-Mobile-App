@@ -10,7 +10,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="137dp"
-        android:background="@drawable/round_border"
+
         android:padding="10dp">
 
         <!--        <TextView-->
@@ -55,6 +55,16 @@
         <!--            android:textSize="14dp"-->
         <!--            android:textStyle="bold" />-->
 
+
+        <ImageView
+            android:id="@+id/choice"
+            android:layout_width="50dp"
+            android:layout_height="48dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="332dp"
+            android:layout_marginTop="79dp"
+            app:srcCompat="@drawable/coloradd" />
 
         <ImageView
             android:id="@+id/cart_image"

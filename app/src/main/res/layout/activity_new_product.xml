@@ -27,47 +27,47 @@
 
     </LinearLayout>
 
-        <ImageView
-            android:id="@+id/select_product_image"
-            android:layout_width="189dp"
-            android:layout_height="176dp"
-            android:layout_below="@+id/layeradmin1"
-            android:layout_centerHorizontal="true"
-            android:background="@drawable/kk"
-            android:padding="@android:dimen/app_icon_size"
-            android:scaleType="centerCrop"
-        />
+    <ImageView
+        android:id="@+id/select_product_image"
+        android:layout_width="189dp"
+        android:layout_height="176dp"
+        android:layout_below="@+id/layeradmin1"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/atw_border_image"
+        android:padding="@android:dimen/app_icon_size"
+        android:scaleType="centerCrop"
+        android:src="@drawable/camera" />
 
-        <EditText
-            android:id="@+id/Product_name"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/select_product_image"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/round_border"
-            android:hint="name"
-            android:inputType="textMultiLine"
-            android:padding="14dp"
-            android:textSize="14dp" />
+    <EditText
+        android:id="@+id/Product_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/select_product_image"
+        android:layout_marginTop="58dp"
+        android:background="@drawable/round_border"
+        android:hint="name"
+        android:inputType="textMultiLine"
+        android:padding="14dp"
+        android:textSize="14dp" />
 
-        <EditText
-            android:id="@+id/Product_Price"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/Product_name"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/round_border"
-            android:hint="qty"
-            android:inputType="number"
-            android:padding="14dp" />
+    <EditText
+        android:id="@+id/Product_qty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Product_name"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/round_border"
+        android:hint="qty"
+        android:inputType="number"
+        android:padding="14dp" />
 
     <Button
         android:id="@+id/product_addButton"
         android:layout_width="326dp"
         android:layout_height="wrap_content"
-        android:layout_below="@id/Product_Price"
+        android:layout_below="@id/Product_qty"
         android:layout_marginLeft="22dp"
-        android:layout_marginTop="274dp"
+        android:layout_marginTop="186dp"
         android:background="@drawable/add_to_cart"
         android:gravity="center"
         android:text="Add Product"

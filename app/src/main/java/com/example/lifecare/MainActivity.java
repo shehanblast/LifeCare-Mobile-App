@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
     private RecyclerView.LayoutManager layoutManager;
     private Button NextProcessBtn;
+    private DatabaseReference itemRef;
     private ImageView close_wish, wishImage, edit1,addProduct;
     String ppid;
     private DatabaseReference ProductsRef;
@@ -45,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setHasFixedSize(true);
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
+        itemRef = FirebaseDatabase.getInstance().getReference().child("Product");
 
         addProduct =  findViewById(R.id.addNewProduct);
 
@@ -84,9 +86,49 @@ public class MainActivity extends AppCompatActivity {
                         Picasso.get().load(Iimage).into(holder.cartImage);
 
 
+                        holder.removePro.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View view) {
+                                AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+                                builder.setTitle("Are you sure?");
+                                builder.setMessage("Product will be removed!");
+
+                                builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                                    @Override
+                                    public void onClick(DialogInterface dialog, int which) {
 
 
-                        holder.itemView.setOnClickListener(new View.OnClickListener() {
+                                        itemRef.child(model.getPid()).removeValue().addOnCompleteListener(new OnCompleteListener<Void>() {
+                                            @Override
+                                            public void onComplete(@NonNull Task<Void> task) {
+                                                if(task.isSuccessful()){
+                                                    Toast.makeText(MainActivity.this, "Deleted Succesfully", Toast.LENGTH_SHORT).show();
+
+                                                }
+                                            }
+                                        });
+
+
+                                    }
+                                });
+                                builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                                    @Override
+                                    public void onClick(DialogInterface dialog, int which) {
+
+
+
+                                    }
+                                });
+                                AlertDialog ad = builder.create();
+                                ad.show();
+                                ;
+                            }
+                        });
+
+
+
+
+                        holder.choice.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View view) {
 
